@@ -1,0 +1,81 @@
+/* Add your own CSS here */
+
+/* example of button being styled using the selectors assigned to it in the script.js file */
+
+.buttons {
+    justify-content: center;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #231123;
+    color: white;
+    border-radius: 2.5px;
+    align-items: center; /* Center items vertically */
+    justify-content: center
+}
+
+
+.buttons:hover {
+    background-color: #807182;
+    cursor: pointer;
+}
+
+#button1 {
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 2.5px;
+}
+
+#button1:hover{
+    background-color: darkblue;
+    cursor: pointer;
+}
+/* Use your own selectors [ids(#) and classes(.) for styling the input elements created in p5]  */
+
+.label {
+    background-color: #807182;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.imageSelector:hover {
+    background-color: #cec0cf;
+}
+
+#fontSelector{
+    margin-top:10% ;
+    margin-bottom:10% ;
+    width: 100% ;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider{
+    opacity: 0.85;
+    background:('assets/Surprised_Pikachu');
+    width: 85%;
+    margin: 2%;
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    
+}
+.slider:hover{
+    opacity: 1;
+}
+
+.inputbox{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #C7D3BF;
+    background-color: #231123;
+}
+
+.imageSelector{
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
