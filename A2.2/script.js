@@ -24,7 +24,7 @@ function setup() {
   imageSelector.option('Blinking White Guy', 'assets/Blinking_Guy.jpg');
   imageSelector.parent('column-one');
   imageSelector.changed(changeImage);
-  imageSelector.class('imageSelector')
+  imageSelector.class('imageSelector');
   
   topTextInput = createInput('Top text');
   topTextInput.parent('column-one');
@@ -34,22 +34,34 @@ function setup() {
   bottomTextInput = createInput('Bottom text');
   bottomTextInput.parent('column-one');
   bottomTextInput.class('inputbox');
-   // Adjust position for column-one
   
+
+  let fsLabel = createP('FontSize:');
+  fsLabel.parent('column-one');
+  fsLabel.class('labels');
   fontSizeSlider = createSlider(10, 100, 50); // Min, Max, Default
   fontSizeSlider.parent('column-one');
   fontSizeSlider.class('slider')
-   // Adjust position for column-one
+   
   
+  let h= createP('Hue:')
+  h.parent('column-one')
+  h.class('labels')
   fontColorSliderH = createSlider(0, 360, 180);
   fontColorSliderH.parent('column-one');
   fontColorSliderH.class('slider');
   // Adjust position for column-one
   
+  let sLabel = createP('Saturation:');
+  sLabel.parent('column-one');
+  sLabel.class('labels');
   fontColorSliderS = createSlider(0, 100, 50);
   fontColorSliderS.parent('column-one'); // Adjust position for column-one
   fontColorSliderS.class('slider');
 
+  let bLabel = createP('Brightness:');
+  bLabel.parent('column-one');
+  bLabel.class('labels');
   fontColorSliderB = createSlider(0, 100, 50);
   fontColorSliderB.parent('column-one'); // Adjust position for column-one
   fontColorSliderB.class('slider');
@@ -62,6 +74,7 @@ function setup() {
   fontSelector.parent('column-one');
   fontSelector.id('fontSelector') 
   // Adjust position for column-one
+
   
   let generateButton = createButton('Make Meme');
   generateButton.parent('column-one'); // Adjust position for column-one
